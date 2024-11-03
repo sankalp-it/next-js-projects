@@ -1,0 +1,43 @@
+{
+  "name": "nest-js-vanilla",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db-seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed/seed.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.1.0",
+    "@heroicons/react": "^2.1.4",
+    "@prisma/client": "^5.21.1",
+    "bcrypt": "^5.1.1",
+    "clsx": "^2.1.1",
+    "heroicons": "^2.1.5",
+    "ladash": "^1.2.0",
+    "lodash": "^4.17.21",
+    "next": "15.0.2",
+    "pg": "^8.13.1",
+    "prisma": "^5.21.1",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.6.3"
+  }
+}
